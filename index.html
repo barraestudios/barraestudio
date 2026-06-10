@@ -1,24 +1,36 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Barra Estúdios</title>
+
+<title>Barra Estúdios | Podcast, Cursos e Eventos em Recife</title>
+
+<meta name="description" content="Estúdio profissional para podcasts, gravação de aulas, eventos corporativos, transmissões ao vivo e produção audiovisual em Recife.">
+
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <header>
-<img src="assets/logo.png" class="logo">
+
+<img src="assets/logo.png" class="logo" alt="Barra Estúdios">
 
 <nav>
 <a href="#sobre">Sobre</a>
 <a href="#planos">Planos</a>
 <a href="#estrutura">Estrutura</a>
+<a href="#barrapod">Barra Pod</a>
 <a href="#contato">Contato</a>
 </nav>
+
 </header>
 
 <section class="hero">
@@ -27,15 +39,23 @@
 
 <div class="hero-content">
 
-<h1>Transforme sua autoridade em conteúdo que gera resultados</h1>
+<h1>Seu estúdio profissional para podcasts, cursos e eventos em Recife.</h1>
 
 <p>
-Podcast • Cursos • Eventos • Produção Audiovisual
+Estrutura completa para gravações, transmissões ao vivo, cursos, mentorias, podcasts e projetos audiovisuais personalizados.
 </p>
+
+<div class="hero-buttons">
 
 <a href="https://wa.me/5581987090973?text=Olá,%20gostaria%20de%20um%20orçamento." class="btn">
 Solicitar Orçamento
 </a>
+
+<a href="#planos" class="btn-secundario">
+Ver Planos
+</a>
+
+</div>
 
 </div>
 
@@ -50,7 +70,7 @@ Solicitar Orçamento
 
 <div>
 <h2>4K</h2>
-<p>Câmeras Sony</p>
+<p>Câmeras Sony ZV-E10</p>
 </div>
 
 <div>
@@ -65,7 +85,13 @@ Solicitar Orçamento
 <h2>Sobre o Barra Estúdios</h2>
 
 <p>
-O Barra Estúdios está localizado no Pina, em Recife, oferecendo estrutura profissional para podcasts, gravação de aulas, eventos corporativos, transmissões ao vivo e projetos audiovisuais personalizados.
+Localizado no Pina, em Recife, o Barra Estúdios foi criado para atender profissionais, empresas, influenciadores e produtores que precisam de uma estrutura profissional para transformar conhecimento em conteúdo de alto nível.
+</p>
+
+<br>
+
+<p>
+Fundado por Flávio Barra, profissional com mais de 20 anos de experiência em comunicação, o estúdio oferece flexibilidade total para podcasts, entrevistas, cursos, eventos corporativos e transmissões ao vivo.
 </p>
 
 </section>
@@ -77,32 +103,151 @@ O Barra Estúdios está localizado no Pina, em Recife, oferecendo estrutura prof
 <div class="planos">
 
 <div class="card">
+
 <h3>Plano Avulso</h3>
+
 <span class="de">R$ 550</span>
+
 <h1>R$ 450</h1>
+
 <p>por hora</p>
+
+<button class="detalhes-btn" onclick="toggleDetalhe('avulso')">
+Ver Detalhes
+</button>
+
+<div id="avulso" class="detalhes">
+
+<p>
+Ideal para quem deseja testar o estúdio ou realizar gravações pontuais.
+</p>
+
+<ul>
+<li>✓ Estrutura completa</li>
+<li>✓ Podcast ou vídeo</li>
+<li>✓ Áudio profissional</li>
+<li>✓ Iluminação profissional</li>
+<li>✓ Gravação ou transmissão</li>
+</ul>
+
+</div>
+
 </div>
 
 <div class="card destaque">
+
 <h3>Plano Profissional</h3>
+
 <span class="de">R$ 1.800</span>
+
 <h1>R$ 1.499</h1>
+
 <p>4 episódios por mês</p>
+
+<button class="detalhes-btn" onclick="toggleDetalhe('profissional')">
+Ver Detalhes
+</button>
+
+<div id="profissional" class="detalhes">
+
+<p>
+Ideal para médicos, advogados, empresários, especialistas e influenciadores que desejam construir autoridade através de conteúdo recorrente.
+</p>
+
+<ul>
+<li>✓ 4 episódios por mês</li>
+<li>✓ Até 1 hora por episódio</li>
+<li>✓ 3 cortes por episódio</li>
+<li>✓ Estrutura completa</li>
+<li>✓ Transmissão ou gravação</li>
+</ul>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <h3>Podcast Profissional</h3>
+
 <span class="de">R$ 3.499</span>
+
 <h1>R$ 2.499</h1>
+
 <p>4 episódios de até 2h</p>
+
+<button class="detalhes-btn" onclick="toggleDetalhe('podcast')">
+Ver Detalhes
+</button>
+
+<div id="podcast" class="detalhes">
+
+<p>
+Ideal para podcasts já estruturados, programas patrocinados e entrevistas profissionais.
+</p>
+
+<ul>
+<li>✓ Até 2 horas por episódio</li>
+<li>✓ Estrutura completa</li>
+<li>✓ Equipe de apoio</li>
+<li>✓ Transmissão ao vivo</li>
+</ul>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <h3>Gravação de Aulas</h3>
+
 <span class="de">R$ 799</span>
+
 <h1>R$ 649</h1>
+
 <p>por hora</p>
+
+<button class="detalhes-btn" onclick="toggleDetalhe('aulas')">
+Ver Detalhes
+</button>
+
+<div id="aulas" class="detalhes">
+
+<p>
+Ideal para cursos online, treinamentos corporativos, workshops e mentorias.
+</p>
+
+<ul>
+<li>✓ Gravação profissional</li>
+<li>✓ Edição básica inclusa</li>
+<li>✓ Entrega pronta</li>
+</ul>
+
 </div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="solucoes">
+
+<h2>Outras Soluções</h2>
+
+<div class="planos">
+
+<div class="card">🎤 Cobertura de Eventos</div>
+
+<div class="card">🏢 Vídeos Institucionais</div>
+
+<div class="card">📡 Transmissões Ao Vivo</div>
+
+<div class="card">🎓 Treinamentos Corporativos</div>
+
+<div class="card">🎬 Produção Audiovisual Personalizada</div>
+
+<div class="card">🏠 Locação de Espaço para Eventos</div>
 
 </div>
 
@@ -114,13 +259,84 @@ O Barra Estúdios está localizado no Pina, em Recife, oferecendo estrutura prof
 
 <div class="galeria">
 
-<img src="assets/estudio1.jpg">
-<img src="assets/estudio2.jpg">
-<img src="assets/estudio3.jpg">
-<img src="assets/estudio4.jpg">
-<img src="assets/estudio5.jpg">
+<img src="assets/estudio1.jpg" alt="Barra Estúdios">
+
+<img src="assets/estudio2.jpg" alt="Barra Estúdios">
+
+<img src="assets/estudio3.jpg" alt="Barra Estúdios">
+
+<img src="assets/estudio4.jpg" alt="Barra Estúdios">
+
+<img src="assets/estudio5.jpg" alt="Barra Estúdios">
 
 </div>
+
+</section>
+
+<section id="barrapod">
+
+<h2>Barra Pod</h2>
+
+<p class="barra-subtitulo">
+Conheça alguns dos episódios produzidos dentro do Barra Estúdios.
+</p>
+
+<div class="videos">
+
+<div class="video">
+
+<iframe
+src="https://www.youtube.com/embed/aoOWTNJHIFU"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="video">
+
+<iframe
+src="https://www.youtube.com/embed/JLMAbejFimg"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="video">
+
+<iframe
+src="https://www.youtube.com/embed/SKFjPrsJ0hc"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+<div class="youtube-btn">
+
+<a href="https://www.youtube.com/@barrapodcast"
+target="_blank"
+class="btn">
+
+Assistir Canal Completo
+
+</a>
+
+</div>
+
+</section>
+
+<section id="mapa">
+
+<h2>Onde Estamos</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Rua+Estudante+Jeremias+Bastos,+124,+Recife&output=embed"
+width="100%"
+height="450"
+style="border:0;border-radius:20px;"
+loading="lazy">
+</iframe>
 
 </section>
 
@@ -128,18 +344,49 @@ O Barra Estúdios está localizado no Pina, em Recife, oferecendo estrutura prof
 
 <h2>Contato</h2>
 
-<p>WhatsApp: (81) 98709-0973</p>
+<p><strong>WhatsApp:</strong> (81) 98709-0973</p>
 
-<p>Instagram: @barraestudiosoficial</p>
+<p><strong>Instagram:</strong> @barraestudiosoficial</p>
 
-<p>E-mail: barrastudios10@gmail.com</p>
+<p><strong>E-mail:</strong> barrastudios10@gmail.com</p>
 
 <p>
-Rua Estudante Jeremias Bastos, 124<br>
+📍 Rua Estudante Jeremias Bastos, 124<br>
 Pina - Recife
 </p>
 
+<a href="https://wa.me/5581987090973?text=Olá,%20gostaria%20de%20um%20orçamento."
+class="btn">
+
+Solicitar Orçamento
+
+</a>
+
 </section>
 
+<a class="whatsapp"
+href="https://wa.me/5581987090973?text=Olá,%20gostaria%20de%20um%20orçamento.">
+
+💬
+
+</a>
+
+<script>
+
+function toggleDetalhe(id){
+
+const item = document.getElementById(id);
+
+if(item.style.display === "block"){
+item.style.display = "none";
+}else{
+item.style.display = "block";
+}
+
+}
+
+</script>
+
 </body>
+
 </html>
